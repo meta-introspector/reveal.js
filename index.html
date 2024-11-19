@@ -14,27 +14,162 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
 	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+	  <div class="reveal">
+	    <div class="slides">
+              <section>
+                <h1>Augmenting Mina O1JS with Performance Recording and Function-Level Profiling</h1>
+                <p>Status Report</p>
+              </section>
+	      
+              <section>
+                <h2>Project Overview</h2>
+                <ul>
+                  <li><strong>Project Name</strong>: Augmenting Mina O1JS with Performance Recording and Function-Level Profiling</li>
+                  <li><strong>Start Date</strong>: September 5, 2024</li>
+                  <li><strong>Current Status</strong>: Funded (as of October 15, 2024)</li>
+                  <li><strong>Project Lead</strong>: @jmikedupont2</li>
+                </ul>
+                <aside class="notes">
+                  The project was opened for community discussion in September, and it was officially funded in October. We are currently in the development phase, with initial testing underway.
+                </aside>
+              </section>
+	      
+              <section>
+                <blockquote>
+                  "This proposal is approved for funding. We are happy to see the expansion of tooling to enable developers to build better, more efficient products on Mina."
+                  <footer>— Mina Navigator Funding Committee</footer>
+                </blockquote>
+              </section>
+	      
+              <section>
+                <h1>🚀 Key Milestones</h1>
+                <ol>
+                  <li>Proposal Submission (Sept 5)</li>
+                  <li>Community Review (Sept 2024)</li>
+                  <li>Funding Approved (Oct 15)</li>
+                  <li>Development Underway</li>
+                </ol>
+              </section>
+	      
+              <section>
+                <h2>Goals & Objectives</h2>
+                <ul>
+                  <li>Add performance recording tools</li>
+                  <li>Enable function-level profiling</li>
+                  <li>Optimize Mina O1JS-based applications</li>
+                </ul>
+                <aside class="notes">
+                  These goals are designed to enhance developer experience and efficiency when building on the Mina protocol. The objective is to ensure function-level visibility in application performance.
+                </aside>
+              </section>
+	      
+              <section>
+                <h2>Current Progress</h2>
+                <ul>
+                  <li><strong>Development Phase</strong>: Initial scoping and design completed</li>
+                  <li><strong>Tooling</strong>: Proof-of-concept for function profiling developed using GitHub Actions and Hugging Face</li>
+                  <li><strong>Community Collaboration</strong>: Early feedback integrated</li>
+                </ul>
+              </section>
+	      
+              <section>
+                <h2>Reporting Options</h2>
+                <ul>
+                  <li>Hosting on Hugging Face: 
+                    <a href="https://huggingface.co/spaces/introspector/dataset-html-viewer">Dataset HTML Viewer</a>
+                  </li>
+                  <li>As Dataset: 
+                    <a href="https://huggingface.co/datasets/introspector/o1js-clinic/blob/main/.clinic/499286.clinic-flame.html">O1JS Clinic</a>
+                  </li>
+                  <li>As a File: 
+                    <a href="https://huggingface.co/datasets/introspector/o1js-peformance-results/raw/main/5099.clinic-flame.html">Performance Results</a>
+                  </li>
+                  <li>As GitHub Page: 
+                    <a href="https://meta-introspector.github.io/o1js/clinic/2837.clinic-bubbleprof.html">Bubbleprof Visualization</a>
+                  </li>
+                </ul>
+              </section>
+	      
+              <section>
+                <h2>Planned Next Steps</h2>
+                <ul>
+                  <li>Complete integration of profiling tools by end of October
+                    <ul>
+                      <li>Rewrote profiling tools to be minimal without clinic or docker</li>
+                    </ul>
+                  </li>
+                  <li>Flexible Publishing of reports
+                    <ul>
+                      <li>Direct data pull from GitHub Actions</li>
+                      <li>Self-hosted frontend for maximum control</li>
+                    </ul>
+                  </li>
+                  <li>Integration with zkapp NextJS frontend</li>
+                  <li>Create callback interface</li>
+                  <li>Aggregation of reports and notebooks with proofs</li>
+                  <li>Expand testing and collect community feedback</li>
+                  <li>Finalize developer documentation</li>
+                  <li>Plan beta testing feedback session</li>
+                </ul>
+              </section>
+	      
+              <section>
+                <h2>Roadbumps</h2>
+                <ul>
+                  <li>Learning various platforms and technologies:
+                    <ul>
+                      <li>GitHub Apps</li>
+                      <li>PNPM</li>
+                      <li>Vercel</li>
+                      <li>Netlify</li>
+                      <li>Hugging Face</li>
+                      <li>React.js</li>
+                      <li>Next.js</li>
+                      <li>TypeScript</li>
+                    </ul>
+                  </li>
+                  <li>Technical challenges:
+                    <ul>
+                      <li>Porting REPL to TypeScript</li>
+                      <li>TypeScript reflection</li>
+                      <li>Server-side rendering</li>
+                      <li>React Query</li>
+                      <li>React states</li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
+              <section>
+                <h2>Future Work</h2>
+                <ul>
+                    <li>Integrate with Jupyter Notebook
+                      <ul>
+                        <li>Use data-forge for collecting results</li>
+                      </ul>
+                    </li>
+                    <li>D3.js Visualizations</li>
+                    <li>Deno Deployment</li>
+                    <li>MDX Slideshow Integration</li>
+                </ul>
+              </section>
+            </div>
+	  </div>
+	  
+	  <script src="dist/reveal.js"></script>
+	  <script src="plugin/notes/notes.js"></script>
+	  <script src="plugin/markdown/markdown.js"></script>
+	  <script src="plugin/highlight/highlight.js"></script>
+	  <script>
+	    // More info about initialization & config:
+	    // - https://revealjs.com/initialization/
+	    // - https://revealjs.com/config/
+	    Reveal.initialize({
+		hash: true,
+		
+		// Learn about plugins: https://revealjs.com/plugins/
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+	    });
+	  </script>
 	</body>
 </html>
